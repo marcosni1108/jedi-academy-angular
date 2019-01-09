@@ -1,6 +1,6 @@
 <div id="student">
   Student: {{student.name}}
-  <div id="temple" [hidden] = "!student.isJedi">
+  <div id="temple" *ngIf="student.isJedi">
       Jedi Temple: {{student.temple}}
   </div>
 </div>
